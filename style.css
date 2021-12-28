@@ -1,0 +1,21 @@
+.navbar img
+{
+    padding: 1.5em;
+}
+
+.navbar ul
+{
+    list-style-type: none;
+    padding: none;
+}
+
+.navbar li
+{
+    display: inline-block;
+    padding: 2em;
+}
+
+.splash img
+{
+    width: 100%;
+}
