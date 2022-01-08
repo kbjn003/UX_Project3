@@ -1,11 +1,343 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>StopAbleism</title>
+<title>Stop Ableism</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width, initial-scale=1">
+
+<!-- Bootstrap connect -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- CSS connect -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Javascript connect -->
+<script src="proj3.js"></script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-The content of the document......
+    <!-- Sticky Navbar -->
+    <header class="navbar">
+
+        <!-- Logo -->
+        <a href="home.html"><img tabindex="0" src="images/stopableism.png" alt="Stop Ableism Logo" ></a>
+
+        <!-- Navigation tabs -->
+        <ul>
+          <a href="#whatisAbleism" tabindex="0">About</a>
+          <a href="business.html" tabindex="0">Business</a>
+          <a href="news.html" tabindex="0">News</a>
+          <a href="insights.html" tabindex="0">Insights</a>
+          <a href="resources.html" tabindex="0">Resources</a>
+      </ul>
+
+        <!-- This is the 'X' to close the side navigation -->
+          <div id="mySidenav" class="sidenav">
+              <p onclick="closeNav()" class="closebtn">&times;</p>
+
+            <!-- Change Font Sizes -->
+           <h1>ACCESSIBILITY TOOLS</h1>
+               <div class="fontSize">
+                <input id="decreaseFont" type="button" value="A-" onclick="normalFontSize()">
+                <span>Change Font Size</span>
+                <input id="increaseFont" type="button" value="A+" onclick="increaseFontSize20()">
+              </div> 
+              <br>
+              <br>
+              <div class="colorContrast">
+                <input id="lessSat" type="button" value="-" onclick="normalFontSize()">
+                <span>Color Saturation</span>
+                <input id="moreSat" type="button" value="+" onclick="increaseFontSize20()">
+                  
+              </div>
+                
+
+                
+         
+            
+
+
+          </div>
+          
+          <!-- This is the Accessibility Controls Button -->
+          <div id="main">
+            <button class="sidenavBtn" onclick="openNav()"><span>ACCESSIBILITY CONTROLS</span></button>
+          </div>
+    </header>
+    
+<section class="splash">
+       
+    <img src="images/cute smiling kid.jpg" alt="Cute Smiling Kid">
+    <h1>BUSINESS</h1>
+  <div class="downArrow">
+    <img src="images/scroll arrow.png" alt="Down Scroll Arrow">
+  </div>
+</section>
+
+  <div id="accordion">
+
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Why is Accessibility Good?
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <img src="images/why-good-business-man.jpg" alt="Kids Faces">
+        <br>
+        <div class="card-body">
+         
+            How are we affected?
+            <br>
+            About 1.85 million people in Ontario (that’s 15.5% of the population) have a disability.
+            47.2% of people over the age of 65 have disabilities.
+            Are you missing potential customers?
+            Predictions are that the number of people with disabilities will continue to grow as our population ages.
+            Don’t lose this major market group to your competitors!
+            You want to do business with this growing population of people with disabilities because they:
+            live with, work with, and influence the rest of our population – on average, 5 or 6 other people, such as colleagues, family members, business owners and other service providers.
+            are loyal customers and consumers – they’ll recommend your quality product or service.
+            As business owners and service providers, you have a common goal.
+            You want happy, satisfied customers whose needs are met.
+            You want customers to feel comfortable and welcome to come back time and time again.
+            If you do your job well, you can expect these customers to refer their friends, co-workers and family members.
+            Loyal customers and their families and relatives are the best customers you can have and the ones you want to keep.
+            As our population ages, think about the fact that more of your existing loyal customers and potential new customers will be people with disabilities, their families, their friends and their caregivers.
+            Smart businesses will recognize the need for accessibility and make sure that consumers who shop, work or do business with them are satisfied.
+            They will ensure that the barriers that may prevent customers from enjoying access to products, services and employment are eliminated and removed.
+        </div>
+      </div>
+    </div>
+
+    <div class="card2">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Accessible Businesses
+          </button>
+        </h5>
+      </div>
+
+
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <img src="images/mission-statement.jpg" alt="Kids Faces">
+          <br>
+        <div class="card-body">
+          
+          I. To stop ableism. Ableism is a set of practices and beliefs that assign inferior value (worth) to people who have developmental, emotional, physical or psychiatric disabilities.
+<br>
+<br>
+II. To initiate, improve, and promote equal access for people with physical disabilities to services, transportation, buildings, businesses, stores, and services. For example, by suggesting operators of such enterprises to install a wheelchair accessible door into their establishments.
+<br>
+<br>
+III. To cultivate the treatment of people with physical disabilities with the same respect and consideration that able-bodied people seem to receive in today's society.
+<br>
+<br>
+IV. To remove attitudinal and systemic barriers that persons with physical disabilities must handle on a daily basis by educating and talking with able-bodied people where we meet them in the daily pursuit of our lives.
+    </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            How To Welcome Customers
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <img src="images/welcome-customers.jpg" alt="Smiling Lady">
+        <div class="card-body">
+
+            Did you know that just over 15.5% of Ontarians have a disability? That is 1 in every 7 Ontarians, and as the population ages, that number will grow. People with disabilities travel, shop and do business in your community with their friends and families, just like everyone else. By providing service that welcomes people with disabilities, you can offer better service to everyone.
+<br><br>
+            Treating all your customers with individual respect and courtesy is at the heart of excellent customer service. You can broaden your customer base by welcoming everyone to your store, restaurant or services, including customers with disabilities. By learning how to serve people with disabilities, you can attract more customers and improve your service to everyone.
+            <br><br>
+            Here are some ways you can provide better service to your customers with disabilities:
+            <br>
+            Treat people with disabilities with the same respect and consideration you have for everyone else.
+            <br>
+            Patience, optimism, and a willingness to find a way to communicate are your best tools.
+            <br>
+            Smile, relax, and keep in mind that people with disabilities are just people.
+            <br>
+            Don’t make assumptions about what type of disability or disabilities a person has.
+            <br>
+            Take the time to get to know your customers’ needs.
+            <br>
+            People with some kinds of disabilities may take a little longer to understand and respond.
+            <br>
+            If you're not sure what to do, ask your customer, "May I help you?"
+            <br>
+            If you can’t understand what someone is saying, just politely ask again.
+            <br>
+            Ask before you offer to help — don’t just jump in.
+            <br>
+            Your customers with disabilities know if they need help and how you can provide it.
+            <br>
+            Find a good way to communicate. A good start is to listen carefully.
+            <br>
+            Look at your customer, but don’t stare.
+            <br>
+            Speak directly to a person with a disability, not to their interpreter or someone who is with them.
+            <br>
+            Use plain language.
+            <br>
+            Don’t touch or address service animals – they are working and have to pay attention at all times.
+            <br>
+            Ask permission before touching a wheelchair or a piece of equipment.
+            <br><br>
+            Tips on serving customers with physical disabilities:
+            <br>
+            There are many types and degrees of physical disabilities, and not all require a wheelchair.
+            <br>
+            People who have arthritis, heart or lung conditions or amputations may also have difficulty with moving, standing or sitting.
+            <br>
+            It may be difficult to identify a person with a physical disability.
+            Speak normally and directly to your customer. Don’t speak to someone who is with them.
+            <br>
+            People with physical disabilities often have their own ways of doing things.
+            <br>
+            Ask before you help.
+            <br>
+            Be patient. Customers will identify their needs to you.
+            <br>
+            Don't touch assistive devices, including wheelchairs, unnecessarily unless it’s an emergency.
+            <br>
+            Provide your customer information about accessible features of the immediate environment (automatic doors, accessible washrooms, etc.).
+             Remove obstacles and rearrange furniture to ensure clear passage.
+            
+        </div>
+      </div>
+    </div>
+
+    <div class="card2">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Business Accessibility Test
+            </button>
+          </h5>
+        </div>
+  
+  
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+            <img src="images/mission-statement.jpg" alt="Kids Faces">
+            <br>
+          <div class="card-body">
+            
+            Is your business welcoming to customers with disabilities? A successful business is one that includes all members of society in its planning, hiring, marketing and delivery of products and services. Please take the accessibility test to find out how you rate. Count up the number of times you answer "Yes."
+<br><br>
+Customer Service
+<br>
+Does your customer service policy make sure that customers with disabilities receive the same service as all your other customers?
+Are your employees comfortable serving customers with disabilities?
+Can you provide your services in different ways – do you ask customers how you may help them?
+<br><br>
+Access To Your Premises For Customers
+<br>
+Do your premises have automatic doors and level access to the entrance?
+Does your parking lot have spaces reserved for people with disabilities?
+Are your hallways and aisles clutter-free and washrooms accessible?
+If services are on different floors, do you have an elevator?
+<br><br>
+Marketing and Product Development
+<br>
+Does your advertising represent the whole community without negative stereotypes?
+<br>
+Does your marketing strategy reach potential customers with disabilities?
+<br>
+Are your new products and services designed to be accessible to all our customers, including those with sensory or mobility disabilities?
+<br><br>
+Polices, Practices and Planning
+<br>
+Do your managers demonstrate a commitment to serving customers with disabilities?
+<br>
+When planning new initiatives, do you consider the needs of people with disabilities?
+<br><br>
+The number of times you answered "Yes" means:
+<br>
+    01 – 06 = Needs work!
+    <br>
+    07 – 08 = You’re Trying...
+    <br>
+    09 – 10 = Good Work.
+    <br>
+    11 – 12 = EXCELLENT!
+    <br>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Financial Assistance
+            </button>
+          </h5>
+        </div>
+  
+  
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+            <img src="images/mission-statement.jpg" alt="Kids Faces">
+            <br>
+          <div class="card-body">
+            
+            Learn about financial assistance that may help make your organization accessible. The following is funding information for businesses and community organizations in Canada. Please check directly with your government or local organizations for the most up-to-date information before beginning any projects.
+<br><br>
+Government of Canada
+<br>
+Under the Income Tax Act, 20(1) (qq) and 20(1) (rr), the Federal government allows businesses/commercial building owners to deduct the amount they paid during the taxation year to make renovations or alterations to a building that enables individuals who have a mobility impairment gain access to the building or to be mobile within it.
+<br><br>
+Other expenses (Line 9270) - There are expenses you can incur to earn income, other than those listed on Form T2125. Enter, on this line, the total of other expenses you incurred to earn income, as long as you did not include them on a previous line. You do not have to list these expenses on the form.
+<br><br>
+Disability-related Modifications - You can deduct outlays and expenses you incur for eligible disability-related modifications made to a building in the year you paid them, instead of having to add them to the capital cost of your building. Eligible disability-related modifications include changes you make to accommodate wheelchairs, such as: installing hand-activated power door openers; installing interior and exterior ramps; and modifying a bathroom, elevator, or doorway.
+<br><br>
+Businesses are also allowed to deduct prescribed disability-related devices or equipment. You can deduct expenses paid to install or get the following disability-related devices and equipment: elevator car-position indicators (such as braille panels and audio signals for individuals having a visual impairment), visual fire-alarm indicators, and listening device for group meetings or telephone devices for individuals who have a hearing impairment.
+<br>
+<br>
+<span style="font-weight: bold;">Non-Profit Sector</span>
+<br>
+Charity Village - Various funding sources for organizations, including foundations.
+Imagine Canada - Formerly Canadian Centre for Philanthropy (CCP) and the Coalition of National Voluntary Organizations (NVO).
+Private Foundations - There are many private foundations that provide grants to non-profit organizations. Directories of these foundations and the types of activities and organizations they support are available at local public libraries.
+<br><br>
+<span style="font-weight: bold;">Service Clubs</span>
+<br>
+Organizations that may be able to provide assistance to support accessibility initiatives:
+<br>
+<span style="list-style-type: circle;">Lions Club</span> 
+<span>Kiwanis Club</span> 
+<span>Optimist Club</span> 
+<span>Independent Order of Odd Fellows</span> 
+<span>Kinsmen/Kinnettes</span> 
+<span>Imperial Order Daughters of the Empire (IODE)</span> 
+          </div>
+        </div>
+      </div>
+  </div>
+    
+    
+<footer>
+
+
+</footer>
 </body>
 
 </html>

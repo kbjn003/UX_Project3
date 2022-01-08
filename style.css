@@ -1,21 +1,339 @@
+body
+{
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+p
+{
+    font-size: 16px;
+}
+.navbar
+{
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    background-color: white;
+    margin: 0;
+    border-bottom-style: inset;
+    z-index: 1;
+}
+
 .navbar img
 {
     padding: 1.5em;
+    width: auto;
 }
 
 .navbar ul
 {
     list-style-type: none;
-    padding: none;
+    padding: 0;
+    margin: 0;
 }
 
-.navbar li
+.dropdown
 {
     display: inline-block;
     padding: 2em;
+    font-size: 1.5em;
+}
+
+
+.AccBtn
+{
+    display: flex;
+}
+
+.AccBtn img
+{
+    height: 25px;
+    width: 25px;
+    padding: 0;
+}
+
+.ableism
+{
+    width: auto;
+    height: 500px;
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 2em;
+}
+
+.ableism h1
+{
+    font-size: 2em;
+    text-align: center;
 }
 
 .splash img
 {
-    width: 100%;
+    width: 90%;
+    padding: 0.05%;
+    border-style: groove;
+    border-color: #003365;
+    border-width: 30px;
+}
+
+.downArrow img
+{
+    width: 50px;
+    height: 50px;
+    border: none;
+    position: absolute;
+    bottom: 50px;
+}
+
+.two
+{
+background-color: white;
+}
+
+footer
+{
+    background-color: #003365;
+    width: auto;
+    height: 300px;
+}
+
+  .show 
+  {
+      display: block;
+  }
+
+  .sidenavBtn {
+    background-color: #003365;
+    color: white;
+    padding: 16px 20px 16px 20px;
+    margin-right: 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 35px;
+    border-radius: 15px;
+  }
+
+  .sidenavBtn img
+  {
+      width: 10%;
+      height: 10%;
+      padding: 0;
+  }
+
+  .sidenavBtn span
+  {
+      font-size: 15px;
+  }
+
+  .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  background-color: #003365;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 70px;
+}
+
+.sidenav span {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.5s;
+}
+
+.sidenav span:hover {
+  color: antiquewhite;
+}
+
+.sidenav .closebtn {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  font-size: 50px;
+  margin-right: 150px;
+  margin-top: 10px;
+}
+
+.sidenav .closebtn:hover
+{
+    cursor: pointer;
+}
+
+#main
+{
+  transition: margin-right .5s;
+}
+
+#main button:hover
+{
+    background-color: #CCD6E0;
+    color: black;
+}
+
+#mySidenav p:hover
+{
+    color: #CCD6E0;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.navbar ul a
+{
+    padding: 2em;
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar ul a:hover 
+{
+    background-color: #CCD6E0;
+}
+
+.mb-0
+{
+    text-align: center;
+}
+.mb-0 button
+{
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#collapseThree  span
+{
+    font-weight: 500;
+}
+
+.card-body
+{
+    padding: 3% 33% 3% 33%;
+    font-size: 18px;
+}
+
+.card
+{
+    margin: 0.5% 0 0.5% 0;
+    background-color: #F2EDDF;
+}
+
+#accordion img
+{
+    width: 30%;
+    padding: 1em;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: groove;
+    border-width: 5px;
+    margin-top: 1%;
+}
+
+#accordion h1
+{
+    text-align: center;
+    padding-top: 2%;
+    text-decoration: underline;
+}
+
+.card-header
+{
+    color: green;
+}
+
+.splash
+{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.splash h1
+{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 10em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+/* 
+.splash img:hover
+{
+    filter: brightness(15%);
+} */
+
+#decreaseFont
+{
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+}
+
+#decreaseFont:hover
+{
+    cursor: pointer;
+}
+
+#increaseFont 
+{
+    width: 50px;
+    height: 50px;
+    font-weight: bolder;
+}
+
+#increaseFont:hover
+{
+    cursor: pointer;
+}
+
+.fontSize
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    padding-top: 30px;
+}
+
+.fontSize span
+{
+    padding: 0 20px 0 20px;
+}
+
+.colorContrast
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    height: 50px;
+}
+
+.colorContrast span
+{
+    padding: 0 20px 0 20px;
+}
+
+#lessSat, #moreSat
+{
+    font-weight: bolder;
+}
+
+#mySidenav h1
+{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
 }
